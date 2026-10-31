@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISTEMA DE NOTAS - UNIVESIDADE DO CEARÁ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <div class="header-head">
+                <h1>UNIVERSIDADE DO CEARÁ</h1>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">Banco de notas</a></li>
+                        <li><a href="#">Documentação</a></li>
+                        <li><a href="#">Iniciar sessão</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="welcome-row">
+                <div>
+                    <p class="hero-title">Seja bem-vindo, {teacher-name}</p>
+                    <p class="hero-text">Gerencie as disciplinas e notas dos seus alunos.</p>
+                </div>
+                
+            </div>
+
+            <form class="filters" id="filters-form">
+                <label for="semester">
+                    <br>
+                    <p>Selecione o semestre</p>
+                    <select name="semester" id="semester">
+                        <option value="first-semester">Primeiro semestre</option>
+                        <option value="second-semester">Segundo semestre</option>
+                    </select>
+                </label>
+
+                <label for="discipline">
+                    Disciplina
+                    <select name="discipline" id="discipline">
+                        <option value="algoritmos">Algoritmos</option>
+                        <option value="banco-de-dados">Banco de Dados</option>
+                        <option value="programacao-web">Programação Web</option>
+                    </select>
+                </label>
+            </form>
+
+            <button type="button" class="btn-subtle theme-success" id="new-grade-button">Success</button>
+            
+            <section class="grade-panel">
+                <div class="panel-header">
+                    <div>
+                        <p class="panel-kicker">Lançamento de notas</p>
+                        <h2 id="panel-title">Algoritmos</h2>
+                    </div>
+                    <button class="secondary-button" type="button" id="save-button">Salvar alterações</button>
+                </div>
+            </section>
+
+        <footer class="footer">
+            <p>Universidade do Ceará © 2026</p>
+        </footer>
+    </main>
+</body>
+</html>
